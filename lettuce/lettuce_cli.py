@@ -71,6 +71,7 @@ def main(args=sys.argv[1:]):
     result = runner.run()
     if not result or result.steps != result.steps_passed:
         raise SystemExit(1)
+    raise SystemExit(0)
 
 if __name__ == '__main__':
     main()
